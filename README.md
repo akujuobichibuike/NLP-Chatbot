@@ -60,7 +60,7 @@ The project leverages the following technologies and libraries:
       pip install -r requirements.txt
 
 ## Running the Chatbot
-To start a conversation with the chatbot, run the following command:
+1. To start a conversation with the chatbot, run the following command:
 
       ```bash
       python chatbot.py
