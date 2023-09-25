@@ -34,7 +34,7 @@ tokenizer = GPT2TokenizerFast.from_pretrained("gpt2")
 text_chunks = split_text_into_chunks(text, max_chunk_length=1024)
 
 # Initialize the OpenAIEmbeddings
-api_key = "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"
+api_key = "" # Replace with your own Openai API key
 embeddings = OpenAIEmbeddings(openai_api_key=api_key)
 
 # Initialize the text splitter
@@ -61,12 +61,12 @@ qa = ConversationalRetrievalChain.from_llm(openai_instance, db.as_retriever())
 
 # Function to process user input and provide responses
 def chat_with_bot():
-    print("Welcome to Access Bank's chatbot! Type 'exit' to stop.")
+    print("Welcome to NLP chatbot! Type 'exit' to stop.")
     while True:
         query = input("You: ")
 
         if query.lower() == 'exit':
-            print("Thank you for using Access Bank's chatbot!")
+            print("Thank you for using NLP chatbot!")
             break
 
         # Initialize an empty chat history for each question
