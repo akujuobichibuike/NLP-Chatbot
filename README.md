@@ -67,16 +67,17 @@ The project leverages the following technologies and libraries:
 
 The chatbot will provide responses based on the input you provide.
 
-Contributing
+## Contributing
 Contributions to this project are welcome! If you'd like to contribute, please follow these steps:
 
-Fork the repository.
-Create a new branch for your feature or bug fix.
-Make your changes and test them thoroughly.
-Commit your changes and push to your fork.
-Open a pull request to the main repository with a clear description of your changes.
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and test them thoroughly.
+4. Commit your changes and push to your fork.
+5. Open a pull request to the main repository with a clear description of your changes.
 
-Contact
-[Your Name] - LinkedIn
-[Your Email Address] - [Your Personal Website/Blog]
+## Contact
+- LinkedIn: [Chibuike Akujuobi](https://www.linkedin.com/in/chibuike-akujuobi-bb9061182/)
+- Twitter: [Victor Akujuobi](https://twitter.com/victor_akujuobi)
+
 Feel free to reach out if you have any questions, suggestions, or feedback about the project.
