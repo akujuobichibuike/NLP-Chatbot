@@ -1,66 +1,82 @@
-# NLP-Chatbot
+# NLP Chatbot
 
-# Innovative Chatbot Project
+This is a personal project developed by me Chibuike Victor Akujuobi. The project focuses on creating an interactive Natural Language Processing (NLP) chatbot using OpenAI's GPT-2 model. The chatbot is capable of answering questions, engaging in conversations, and providing information based on the input provided by users.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Project Structure](#project-structure)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [How to Use](#how-to-use)
+- [Contributing](#contributing)
+- [Contact](#contact)
 
 ## Overview
 
-Our innovative chatbot project is designed to provide efficient and confidential assistance to users. This project leverages advanced natural language processing (NLP) techniques and AI-powered models to answer questions and engage in conversations with users.
+The NLP Chatbot project is designed to demonstrate the capabilities of OpenAI's GPT-2 model in a conversational context. It allows users to interact with the chatbot by asking questions, seeking information, or engaging in conversations on various topics.
 
-## Components and Libraries
+## Project Structure
 
-### 1. Tokenization and Text Chunking
+The project is organized into the following components:
 
-We utilized the GPT-2 Tokenizer to break down text into smaller, manageable chunks. The `count_tokens` function counts the tokens in a given text, and the `split_text_into_chunks` function segments long texts into smaller sections for processing.
+- `chatbot.py`: The main Python script for running the chatbot.
+- `data`: Directory containing any data files or text documents used for reference.
+- `requirements.txt`: List of required Python packages and dependencies.
 
-### 2. Language Models and Embeddings
+## Features
 
-Our project integrates OpenAI's language models and embeddings to understand and generate human-like responses. The OpenAI API key (`api_key`) allows us to access these powerful language capabilities securely.
+- Interactive chatbot powered by OpenAI's GPT-2 model.
+- Supports a wide range of natural language queries and conversations.
+- Easy-to-use interface for interacting with the chatbot.
 
-### 3. Vector Storage
+## Technologies Used
 
-To efficiently manage and retrieve text chunks, we employed the FAISS vector store, ensuring rapid access to relevant information.
+The project leverages the following technologies and libraries:
 
-### 4. Question-Answering Chain
+- Python
+- OpenAI GPT-2
+- Transformers library
+- IPython (for interactive display)
+- Other libraries and dependencies listed in `requirements.txt`
 
-Our system includes a question-answering (QA) chain, which utilizes OpenAI's language models to provide accurate answers to user queries.
+## How to Use
 
-### 5. Conversational Interface
+### Setting Up the Chatbot
 
-The project features a user-friendly conversational interface that enables users to interact with the chatbot.
+1. Clone this repository:
 
-## Code Snippet
+   ```bash
+   git clone https://github.com/yourusername/nlp-chatbot.git
 
-```python
-# Import necessary libraries and modules
-import os
-import pandas as pd
-import matplotlib.pyplot as plt
-from transformers import GPT2TokenizerFast
-from langchain.document_loaders import PyPDFLoader
-# ... (other imports)
+2. Navigate to the project directory:
 
-# Initialize components and libraries
-# ... (initialization of tokenizer, embeddings, text splitter, etc.)
+   ```bash
+   cd nlp-chatbot
 
-# Function to process user input and provide responses
-def chat_with_bot():
-    print("Welcome to our chatbot! Type 'exit' to stop.")
-    while True:
-        query = input("You: ")
+3. Install the required packages:
 
-        if query.lower() == 'exit':
-            print("Thank you for using our chatbot!")
-            break
+      ```bash
+      pip install -r requirements.txt
 
-        # Initialize an empty chat history for each question
-        chat_history = []
+## Running the Chatbot
+To start a conversation with the chatbot, run the following command:
 
-        # Split the user's query into chunks if it's too long
-        query_chunks = split_text_into_chunks(query, max_chunk_length=1024)
+      ```bash
+      python chatbot.py
 
-        for chunk in query_chunks:
-            result = qa({"question": chunk, "chat_history": chat_history})
-            print(f'Chatbot: {result["answer"]}')
+The chatbot will provide responses based on the input you provide.
 
-# Call the chat_with_bot function to start the conversation
-chat_with_bot()
+Contributing
+Contributions to this project are welcome! If you'd like to contribute, please follow these steps:
+
+Fork the repository.
+Create a new branch for your feature or bug fix.
+Make your changes and test them thoroughly.
+Commit your changes and push to your fork.
+Open a pull request to the main repository with a clear description of your changes.
+
+Contact
+[Your Name] - LinkedIn
+[Your Email Address] - [Your Personal Website/Blog]
+Feel free to reach out if you have any questions, suggestions, or feedback about the project.
