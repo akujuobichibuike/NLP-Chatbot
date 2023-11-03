@@ -47,7 +47,7 @@ The project leverages the following technologies and libraries:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/nlp-chatbot.git
+   git clone https://github.com/akujuobichibuike/nlp-chatbot.git
 
 2. Navigate to the project directory:
 
